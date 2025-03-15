@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   return (
     <footer className="relative border-t border-white/10 py-16">
-      <div className="container mx-auto px-4">
+      <div className="content-container">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-3 lg:gap-24">
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-bold flex items-center">
