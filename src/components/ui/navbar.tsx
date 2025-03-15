@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +39,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="ml-4">
-              Get Started
-            </Button>
           </div>
           
           {/* Mobile menu button */}
@@ -79,9 +75,6 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="mt-4 w-full">
-                Get Started
-              </Button>
             </div>
           </motion.div>
         )}

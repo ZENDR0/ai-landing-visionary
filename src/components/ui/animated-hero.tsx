@@ -1,6 +1,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { PhoneCall } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
@@ -59,6 +61,10 @@ function Hero() {
               across industries.
             </p>
           </div>
+          
+          <Button size="lg" className="gap-2" variant="outline">
+            Schedule a call <PhoneCall className="w-4 h-4" />
+          </Button>
         </div>
       </div>
     </div>

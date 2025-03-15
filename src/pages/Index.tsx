@@ -11,6 +11,7 @@ import { CTASection } from "@/components/ui/cta-section";
 import { Testimonial } from "@/components/ui/testimonial-card";
 import { Stats } from "@/components/ui/stats";
 import { Footer } from "@/components/ui/footer";
+import { Blog } from "@/components/ui/blog-section";
 
 const Index = () => {
   return (
@@ -29,8 +30,8 @@ const Index = () => {
         
         <section id="services" className="py-16">
           <div className="container mx-auto px-4 text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Our AI Services</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Our AI Services</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-center">
               We offer a comprehensive suite of AI and ML solutions to help your business harness the power of artificial intelligence.
             </p>
           </div>
@@ -85,11 +86,15 @@ const Index = () => {
           />
         </section>
         
+        <section id="blog" className="py-16">
+          <Blog />
+        </section>
+        
         <section id="testimonials" className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Client Success Stories</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Client Success Stories</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-center">
                 Don't just take our word for it - hear from our clients about how our AI solutions have transformed their businesses.
               </p>
             </div>
