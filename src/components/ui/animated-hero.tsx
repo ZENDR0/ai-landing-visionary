@@ -1,8 +1,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
@@ -26,11 +24,6 @@ function Hero() {
     <div className="w-full">
       <div className="container mx-auto">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
-          <div>
-            <Button variant="secondary" size="sm" className="gap-4">
-              Discover our AI expertise <MoveRight className="w-4 h-4" />
-            </Button>
-          </div>
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
               <span className="text-spektr-cyan-50">AI solutions that are</span>
@@ -65,14 +58,6 @@ function Hero() {
               business challenges, drive innovation, and create measurable value for enterprises
               across industries.
             </p>
-          </div>
-          <div className="flex flex-row gap-3">
-            <Button size="lg" className="gap-4" variant="outline">
-              Schedule a consultation <PhoneCall className="w-4 h-4" />
-            </Button>
-            <Button size="lg" className="gap-4">
-              View our solutions <MoveRight className="w-4 h-4" />
-            </Button>
           </div>
         </div>
       </div>
