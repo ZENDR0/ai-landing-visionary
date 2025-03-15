@@ -83,6 +83,10 @@
     opacity: 0.5;
   }
 
+  .content-container {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
   @keyframes twinkle {
     0% { opacity: 0.5; }
     50% { opacity: 0.8; }

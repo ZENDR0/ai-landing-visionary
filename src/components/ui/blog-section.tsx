@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Blog = () => (
   <div className="w-full py-20 lg:py-40">
-    <div className="container mx-auto flex flex-col gap-14">
+    <div className="mx-auto flex flex-col gap-14">
       <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center gap-8">
         <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-center w-full sm:text-left">
           Latest articles
