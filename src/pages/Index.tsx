@@ -13,6 +13,7 @@ import CaseStudiesSection from "@/components/sections/CaseStudiesSection";
 import BlogSection from "@/components/sections/BlogSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import ContactSection from "@/components/sections/ContactSection";
+import AiChatSection from "@/components/sections/AiChatSection";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       
       <main className="content-container">
         <HeroSection />
+        <AiChatSection />
         <ClientsSection />
         <ServicesSection />
         <StatsSection />
