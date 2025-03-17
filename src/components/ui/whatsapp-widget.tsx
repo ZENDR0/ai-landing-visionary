@@ -24,9 +24,9 @@ export function WhatsAppWidget({
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {isOpen && (
-        <Card className="mb-4 w-72 shadow-lg animate-fade-in glass-morphism light-theme:bg-white light-theme:border-gray-200">
+        <Card className="mb-4 w-72 shadow-lg animate-fade-in glass-morphism">
           <CardContent className="p-4">
             <h3 className="font-medium mb-2 light-theme:text-gray-800">Contact us on WhatsApp</h3>
             <p className="text-sm text-muted-foreground mb-4 light-theme:text-gray-600">
@@ -34,7 +34,7 @@ export function WhatsAppWidget({
             </p>
             <Button 
               onClick={handleOpenWhatsApp}
-              className="w-full light-theme:bg-green-500 light-theme:hover:bg-green-600"
+              className="w-full bg-green-500 hover:bg-green-600 light-theme:bg-green-500 light-theme:hover:bg-green-600 light-theme:text-white"
             >
               Start Chat
             </Button>
