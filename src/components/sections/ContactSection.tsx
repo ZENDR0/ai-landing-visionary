@@ -25,14 +25,14 @@ Thank you,
   };
 
   return (
-    <section id="contact" className="py-20 bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl my-12">
+    <section id="contact" className="py-20 bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl my-12 light-theme:bg-black/5 light-theme:border-black/10">
       <div className="content-container flex flex-col items-center text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Contact Us</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 light-theme:text-gray-900">Contact Us</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-10 light-theme:text-gray-600">
           Ready to leverage AI for your business? Our team of experts is ready to help you
           implement cutting-edge AI solutions tailored to your specific needs.
         </p>
-        <Button onClick={handleContactClick} size="lg" className="gap-2">
+        <Button onClick={handleContactClick} size="lg" className="gap-2 light-theme:bg-gray-900 light-theme:text-white">
           Send us a message <Mail className="w-4 h-4" />
         </Button>
       </div>
