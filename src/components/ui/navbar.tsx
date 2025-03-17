@@ -41,14 +41,16 @@ const Navbar = () => {
             ))}
           </div>
           
-          {/* Theme Toggle */}
-          <div className="hidden md:flex">
+          {/* Theme Toggle - Desktop */}
+          <div className="hidden md:block">
             <ThemeToggle />
           </div>
           
-          {/* Mobile menu button */}
+          {/* Mobile menu button and Theme Toggle */}
           <div className="md:hidden flex items-center gap-4">
-            <ThemeToggle />
+            <div className="mr-2">
+              <ThemeToggle />
+            </div>
             <button
               onClick={toggleMenu}
               className="text-white light-theme:text-gray-800 focus:outline-none"
