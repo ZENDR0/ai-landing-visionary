@@ -4,6 +4,7 @@
 import { Background } from "@/components/ui/background";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
+import { WhatsAppWidget } from "@/components/ui/whatsapp-widget";
 
 import HeroSection from "@/components/sections/HeroSection";
 import ClientsSection from "@/components/sections/ClientsSection";
@@ -34,6 +35,7 @@ const Index = () => {
       </main>
       
       <Footer />
+      <WhatsAppWidget phoneNumber="1234567890" />
     </div>
   );
 };

@@ -151,26 +151,26 @@ const Gallery4 = ({
             {items.map((item) => (
               <CarouselItem
                 key={item.id}
-                className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
+                className="max-w-[280px] pl-[20px] lg:max-w-[320px]"
               >
                 <a href={item.href} className="group rounded-xl">
-                  <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
+                  <div className="group relative h-full min-h-[22rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/6] lg:aspect-[3/4]">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 h-full bg-[linear-gradient(hsl(var(--primary)/0),hsl(var(--primary)/0.4),hsl(var(--primary)/0.8)_100%)] mix-blend-multiply" />
-                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
-                      <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
+                    <div className="absolute inset-0 h-full bg-gradient-to-t from-black via-black/70 to-transparent mix-blend-multiply" />
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-5 text-primary-foreground md:p-6">
+                      <div className="mb-2 text-lg font-semibold md:mb-3">
                         {item.title}
                       </div>
-                      <div className="mb-8 line-clamp-2 md:mb-12 lg:mb-9">
+                      <div className="mb-6 line-clamp-3 text-sm text-gray-200">
                         {item.description}
                       </div>
-                      <div className="flex items-center text-sm">
+                      <div className="flex items-center text-sm text-white/90">
                         Read more{" "}
-                        <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
                       </div>
                     </div>
                   </div>

@@ -62,7 +62,12 @@ function Hero() {
             </p>
           </div>
           
-          <Button size="lg" className="gap-2" variant="outline">
+          <Button 
+            size="lg" 
+            className="gap-2" 
+            variant="outline"
+            onClick={() => window.open("https://calendly.com/your-calendly-link", "_blank")}
+          >
             Schedule a call <PhoneCall className="w-4 h-4" />
           </Button>
         </div>
